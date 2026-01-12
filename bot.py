@@ -4,7 +4,7 @@ from telegram.ext import Application, CommandHandler, MessageHandler, filters
 import os
 
 # Получаем токен из переменной окружения
-TOKEN = os.getenv("8291804377:AAF9eAHHfJW_cojI2hR_m7HuAQut2Zfxv7g")
+TOKEN = os.getenv("TOKEN")
 
 # Функция, которая срабатывает на команду /start
 async def start(update, context):
@@ -28,4 +28,5 @@ def main():
     app.run_polling()
 
 if __name__ == '__main__':
+
     main()
